@@ -1,9 +1,14 @@
-# Modularização do jogo da adivinhação
+import random
+import time
 
 def main():
     # Definição da lógica do jogo
-    numero_secreto = 7
+    numero_secreto = random.randint(1, 100)
     tentativas = 0
+    inicio = time.time()
+
+    print("Bem-vindo ao jogo da adivinhação!")
+    print("O objetivo do jogo é adivinhar o número secreto que está entre 1 e 100.")
 
     # Laço de repetição contendo o jogo
     while True:
