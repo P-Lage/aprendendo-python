@@ -29,5 +29,9 @@ def main():
             print(f"Parabéns! Você acertou o número secreto em {tentativas} tentativas.")
             break
 
+    fim = time.time()
+    tempo = fim - inicio
+    print(f"Tempo de jogo: {tempo:.2f} segundos.")
+
 if __name__ == "__main__":
     main()
